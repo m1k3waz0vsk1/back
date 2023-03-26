@@ -14,7 +14,8 @@ import { UserController, PostController } from './controllers/index.js';
 mongoose
 //  .connect(process.env.MONGODB_URI)
 //  .connect("mongodb://127.0.0.1:27017/mern")
-  .connect("mongodb+srv://admin:Twchy1cydalT$@cluster0.wtg5v1a.mongodb.net/mern?retryWrites=true&w=majority")
+//  .connect("mongodb+srv://admin:Twchy1cydalT$@cluster0.wtg5v1a.mongodb.net/mern?retryWrites=true&w=majority")
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log('DB ok'))
   .catch((err) => console.log('DB error', err));
 
